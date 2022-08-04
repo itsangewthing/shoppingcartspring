@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" /> -->
+</head>
+<body>
+    
+    <h1 style="font-family: Calibri;">helloo <span data-th-text="${name}">!</span></h1>
+    <br><br>
+
+    <!-- <table width="100%" style="font-family: Calibri"> -->
+<table>
+        <!-- <div class="form-container"> -->
+    <th class="additems">add item(s):</th>
+            <td>
+            <form action="/cart" method="post">        
+            <br>
+            <input type="text" name="cartItem" placeholder="add an item to cart" size="30" required>
+        
+            <button type="submit">add to cart</button>
+            </form>
+            </td>
+
+     
+                <tr th:class="cartlist">cart list</td>
+                  <div>
+                <td th:each="cartItem:${cartItem}">cartItem</tr>
+                    </div>
+        
+        
+                
+             </div>
+
+        </table>
+    
+</body>
+</html>

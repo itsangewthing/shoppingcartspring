@@ -1,0 +1,27 @@
+.h1 {
+    color:rgb(46, 50, 54);
+    align-items: center;
+}
+
+.button {
+    color:darkseagreen;
+    align-items: center;
+}
+
+
+.cartlist{
+    width: auto;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* .form-container form,
+.form-container form div {
+    display: inline;
+}
+
+.form-container button {
+    display: inline;
+    vertical-align: middle;
+} */
